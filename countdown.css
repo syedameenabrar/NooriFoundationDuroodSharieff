@@ -1,0 +1,71 @@
+:root{  --main-color: #0c7c99; }
+.counter{
+    color: var(--main-color);
+    background: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 195px;
+    height: 195px;
+    padding: 0 0 20px 20px;
+    margin: 0 auto;
+    border-radius: 100px 100px;
+    position: relative;
+    z-index: 1;
+}
+.counter:before{
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 100px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: -1;
+}
+.counter .counter-icon{
+    color:#fff;
+    background: var(--main-color);
+    font-size: 30px;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px;
+    border-radius: 50px;
+}
+.counter h3{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+.counter .counter-value{
+    font-size: 30px;
+    font-weight: 600;
+}
+.counter.blue{ --main-color: #0083E7; }
+.counter.green{ --main-color: #00B853; }
+.counter.orange{ --main-color: #f98348; }
+
+.navbar-brand{
+    width: 20%;
+}
+.logoText{
+    font-size: xx-large;
+    font-weight: 900;
+}
+.first{
+    background-color: floralwhite;
+    margin-bottom: 10%;
+    margin-top: 6%;
+}
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+}   
+@media(max-width:570px){
+    /* .container{ margin-top: 115% !important; } */
+    .navbar-brand{
+        width: 20% !important;
+    }
+}   
